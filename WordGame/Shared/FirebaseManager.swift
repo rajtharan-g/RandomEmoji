@@ -24,7 +24,7 @@ class FirebaseManager: NSObject {
     
     func listenToFirebaseDB() {
         ref = Database.database().reference()
-        refHandle = ref.queryLimited(toLast: totalTileSize).observe(DataEventType.value, with: { (snapshot) in
+        refHandle = ref.observe(DataEventType.value, with: { (snapshot) in
             self.handleResponse(snapshot: snapshot)
         })
     }

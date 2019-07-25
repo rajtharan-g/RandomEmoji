@@ -23,9 +23,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        activityIndicator.startAnimating()
-        FirebaseManager.shared.listenToFirebaseDB()
-        FirebaseManager.shared.delegate = self
+        fetchEmojis()
     }
     
     // MARK: - Overriding default methods
@@ -38,6 +36,13 @@ class ViewController: UIViewController {
         return super.traitCollection
     }
     
+    // MARK: - Custom methods
+    
+    func fetchEmojis() {
+        activityIndicator.startAnimating()
+        FirebaseManager.shared.listenToFirebaseDB()
+        FirebaseManager.shared.delegate = self
+    }
     
     // MARK: - IBAction methods
     
@@ -57,11 +62,14 @@ class ViewController: UIViewController {
 extension ViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return words?.count ?? 0
+        if let words = words {
+            return words.count
+        }
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "wordCell", for: indexPath) as! WordCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WordCollectionViewCell.identifier, for: indexPath) as! WordCollectionViewCell
         cell.updateCell(word: words?[indexPath.row])
         return cell
     }
@@ -76,6 +84,11 @@ extension ViewController: FirebaseManagerDelegate {
         activityIndicator.stopAnimating()
         self.words = words
         wordCollectionView.reloadData()
+        if let layout = wordCollectionView.collectionViewLayout as? CustomLayout {
+            
+            // Updating the inset whenever the collection view reloads
+           layout.updateCollectionViewInsets(collectionView: wordCollectionView)
+        }
     }
     
 }

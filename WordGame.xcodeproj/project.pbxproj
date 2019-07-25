@@ -11,16 +11,16 @@
 		85C10DB622D06B6200C91888 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C10DB522D06B6200C91888 /* AppDelegate.swift */; };
 		85C10DCB22D06B6500C91888 /* WordGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C10DCA22D06B6500C91888 /* WordGameTests.swift */; };
 		85C10DD622D06B6500C91888 /* WordGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C10DD522D06B6500C91888 /* WordGameUITests.swift */; };
-		85F14D4922E9EF56007705C9 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F14D4822E9EF56007705C9 /* Word.swift */; };
-		85F6C0E722E9DAF100177545 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85F6C0D622E9DAF000177545 /* LaunchScreen.storyboard */; };
-		85F6C0E822E9DAF100177545 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85F6C0D822E9DAF000177545 /* Main.storyboard */; };
-		85F6C0E922E9DAF100177545 /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F6C0DB22E9DAF000177545 /* CustomLayout.swift */; };
-		85F6C0EA22E9DAF100177545 /* WordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F6C0DD22E9DAF000177545 /* WordCollectionViewCell.swift */; };
-		85F6C0EB22E9DAF100177545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85F6C0DE22E9DAF000177545 /* Assets.xcassets */; };
-		85F6C0EC22E9DAF100177545 /* GameHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F6C0E022E9DAF100177545 /* GameHelper.swift */; };
-		85F6C0ED22E9DAF100177545 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F6C0E122E9DAF100177545 /* FirebaseManager.swift */; };
-		85F6C0EE22E9DAF100177545 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85F6C0E322E9DAF100177545 /* GoogleService-Info.plist */; };
-		85F6C0F022E9DAF100177545 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F6C0E622E9DAF100177545 /* ViewController.swift */; };
+		85F14D5F22EA1DD6007705C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F14D4B22EA1DD6007705C9 /* ViewController.swift */; };
+		85F14D6022EA1DD6007705C9 /* WordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F14D4D22EA1DD6007705C9 /* WordCollectionViewCell.swift */; };
+		85F14D6122EA1DD6007705C9 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F14D4F22EA1DD6007705C9 /* Word.swift */; };
+		85F14D6222EA1DD6007705C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85F14D5122EA1DD6007705C9 /* GoogleService-Info.plist */; };
+		85F14D6422EA1DD7007705C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85F14D5422EA1DD6007705C9 /* Assets.xcassets */; };
+		85F14D6522EA1DD7007705C9 /* GameHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F14D5622EA1DD6007705C9 /* GameHelper.swift */; };
+		85F14D6622EA1DD7007705C9 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F14D5722EA1DD6007705C9 /* FirebaseManager.swift */; };
+		85F14D6722EA1DD7007705C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85F14D5922EA1DD6007705C9 /* LaunchScreen.storyboard */; };
+		85F14D6822EA1DD7007705C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85F14D5B22EA1DD6007705C9 /* Main.storyboard */; };
+		85F14D6922EA1DD7007705C9 /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F14D5E22EA1DD6007705C9 /* CustomLayout.swift */; };
 		9EC7D15940AD96BAEF4A8F94 /* Pods_WordGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DEFD72EA6E787576B0BEF7D /* Pods_WordGame.framework */; };
 		F8831617A1BE3A3534F9C7B4 /* Pods_WordGameUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7445A66001F65A59F8A14F4F /* Pods_WordGameUITests.framework */; };
 /* End PBXBuildFile section */
@@ -57,17 +57,17 @@
 		85C10DD122D06B6500C91888 /* WordGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85C10DD522D06B6500C91888 /* WordGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGameUITests.swift; sourceTree = "<group>"; };
 		85C10DD722D06B6500C91888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		85F14D4822E9EF56007705C9 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
-		85F6C0D722E9DAF000177545 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		85F6C0D922E9DAF000177545 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		85F6C0DB22E9DAF000177545 /* CustomLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
-		85F6C0DD22E9DAF000177545 /* WordCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordCollectionViewCell.swift; sourceTree = "<group>"; };
-		85F6C0DE22E9DAF000177545 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		85F6C0E022E9DAF100177545 /* GameHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameHelper.swift; sourceTree = "<group>"; };
-		85F6C0E122E9DAF100177545 /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
-		85F6C0E322E9DAF100177545 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		85F6C0E422E9DAF100177545 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		85F6C0E622E9DAF100177545 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85F14D4B22EA1DD6007705C9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		85F14D4D22EA1DD6007705C9 /* WordCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordCollectionViewCell.swift; sourceTree = "<group>"; };
+		85F14D4F22EA1DD6007705C9 /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		85F14D5122EA1DD6007705C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		85F14D5222EA1DD6007705C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85F14D5422EA1DD6007705C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85F14D5622EA1DD6007705C9 /* GameHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameHelper.swift; sourceTree = "<group>"; };
+		85F14D5722EA1DD6007705C9 /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		85F14D5A22EA1DD6007705C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85F14D5C22EA1DD6007705C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85F14D5E22EA1DD6007705C9 /* CustomLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
 		8BC8108709A88CF76CAB8B26 /* Pods-WordGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordGameTests.release.xcconfig"; path = "Target Support Files/Pods-WordGameTests/Pods-WordGameTests.release.xcconfig"; sourceTree = "<group>"; };
 		8DEFD72EA6E787576B0BEF7D /* Pods_WordGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WordGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F05D4C633BC261A777A69B /* Pods-WordGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WordGameUITests.debug.xcconfig"; path = "Target Support Files/Pods-WordGameUITests/Pods-WordGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -136,14 +136,14 @@
 		85C10DB422D06B6200C91888 /* WordGame */ = {
 			isa = PBXGroup;
 			children = (
-				85F6C0DE22E9DAF000177545 /* Assets.xcassets */,
-				85F6C0F122E9DB2700177545 /* Models */,
-				85F6C0DC22E9DAF000177545 /* Cells */,
-				85F6C0DF22E9DAF100177545 /* Shared */,
-				85F6C0D522E9DAF000177545 /* Storyboards */,
-				85F6C0E222E9DAF100177545 /* Supporting files */,
-				85F6C0DA22E9DAF000177545 /* UIClasses */,
-				85F6C0E522E9DAF100177545 /* View controller */,
+				85F14D5322EA1DD6007705C9 /* Assets */,
+				85F14D5D22EA1DD6007705C9 /* Layouts */,
+				85F14D4E22EA1DD6007705C9 /* Models */,
+				85F14D5522EA1DD6007705C9 /* Shared */,
+				85F14D5822EA1DD6007705C9 /* Storyboards & Xibs */,
+				85F14D5022EA1DD6007705C9 /* Supporting files */,
+				85F14D4A22EA1DD6007705C9 /* View Controllers */,
+				85F14D4C22EA1DD6007705C9 /* Views */,
 				85C10DB522D06B6200C91888 /* AppDelegate.swift */,
 			);
 			path = WordGame;
@@ -167,63 +167,71 @@
 			path = WordGameUITests;
 			sourceTree = "<group>";
 		};
-		85F6C0D522E9DAF000177545 /* Storyboards */ = {
+		85F14D4A22EA1DD6007705C9 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				85F6C0D622E9DAF000177545 /* LaunchScreen.storyboard */,
-				85F6C0D822E9DAF000177545 /* Main.storyboard */,
+				85F14D4B22EA1DD6007705C9 /* ViewController.swift */,
 			);
-			path = Storyboards;
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
-		85F6C0DA22E9DAF000177545 /* UIClasses */ = {
+		85F14D4C22EA1DD6007705C9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				85F6C0DB22E9DAF000177545 /* CustomLayout.swift */,
+				85F14D4D22EA1DD6007705C9 /* WordCollectionViewCell.swift */,
 			);
-			path = UIClasses;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		85F6C0DC22E9DAF000177545 /* Cells */ = {
+		85F14D4E22EA1DD6007705C9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				85F6C0DD22E9DAF000177545 /* WordCollectionViewCell.swift */,
+				85F14D4F22EA1DD6007705C9 /* Word.swift */,
 			);
-			path = Cells;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		85F6C0DF22E9DAF100177545 /* Shared */ = {
+		85F14D5022EA1DD6007705C9 /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
-				85F6C0E022E9DAF100177545 /* GameHelper.swift */,
-				85F6C0E122E9DAF100177545 /* FirebaseManager.swift */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		85F6C0E222E9DAF100177545 /* Supporting files */ = {
-			isa = PBXGroup;
-			children = (
-				85F6C0E322E9DAF100177545 /* GoogleService-Info.plist */,
-				85F6C0E422E9DAF100177545 /* Info.plist */,
+				85F14D5122EA1DD6007705C9 /* GoogleService-Info.plist */,
+				85F14D5222EA1DD6007705C9 /* Info.plist */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
 		};
-		85F6C0E522E9DAF100177545 /* View controller */ = {
+		85F14D5322EA1DD6007705C9 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				85F6C0E622E9DAF100177545 /* ViewController.swift */,
+				85F14D5422EA1DD6007705C9 /* Assets.xcassets */,
 			);
-			path = "View controller";
+			path = Assets;
 			sourceTree = "<group>";
 		};
-		85F6C0F122E9DB2700177545 /* Models */ = {
+		85F14D5522EA1DD6007705C9 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				85F14D4822E9EF56007705C9 /* Word.swift */,
+				85F14D5622EA1DD6007705C9 /* GameHelper.swift */,
+				85F14D5722EA1DD6007705C9 /* FirebaseManager.swift */,
 			);
-			path = Models;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		85F14D5822EA1DD6007705C9 /* Storyboards & Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				85F14D5922EA1DD6007705C9 /* LaunchScreen.storyboard */,
+				85F14D5B22EA1DD6007705C9 /* Main.storyboard */,
+			);
+			path = "Storyboards & Xibs";
+			sourceTree = "<group>";
+		};
+		85F14D5D22EA1DD6007705C9 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				85F14D5E22EA1DD6007705C9 /* CustomLayout.swift */,
+			);
+			path = Layouts;
 			sourceTree = "<group>";
 		};
 		A2EDE37D3D68497574E0C17D /* Pods */ = {
@@ -347,10 +355,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85F6C0E722E9DAF100177545 /* LaunchScreen.storyboard in Resources */,
-				85F6C0EE22E9DAF100177545 /* GoogleService-Info.plist in Resources */,
-				85F6C0EB22E9DAF100177545 /* Assets.xcassets in Resources */,
-				85F6C0E822E9DAF100177545 /* Main.storyboard in Resources */,
+				85F14D6822EA1DD7007705C9 /* Main.storyboard in Resources */,
+				85F14D6722EA1DD7007705C9 /* LaunchScreen.storyboard in Resources */,
+				85F14D6422EA1DD7007705C9 /* Assets.xcassets in Resources */,
+				85F14D6222EA1DD6007705C9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,12 +469,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85F6C0F022E9DAF100177545 /* ViewController.swift in Sources */,
-				85F14D4922E9EF56007705C9 /* Word.swift in Sources */,
-				85F6C0EA22E9DAF100177545 /* WordCollectionViewCell.swift in Sources */,
-				85F6C0EC22E9DAF100177545 /* GameHelper.swift in Sources */,
-				85F6C0ED22E9DAF100177545 /* FirebaseManager.swift in Sources */,
-				85F6C0E922E9DAF100177545 /* CustomLayout.swift in Sources */,
+				85F14D6622EA1DD7007705C9 /* FirebaseManager.swift in Sources */,
+				85F14D6922EA1DD7007705C9 /* CustomLayout.swift in Sources */,
+				85F14D6522EA1DD7007705C9 /* GameHelper.swift in Sources */,
+				85F14D6022EA1DD6007705C9 /* WordCollectionViewCell.swift in Sources */,
+				85F14D6122EA1DD6007705C9 /* Word.swift in Sources */,
+				85F14D5F22EA1DD6007705C9 /* ViewController.swift in Sources */,
 				85C10DB622D06B6200C91888 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,18 +511,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		85F6C0D622E9DAF000177545 /* LaunchScreen.storyboard */ = {
+		85F14D5922EA1DD6007705C9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				85F6C0D722E9DAF000177545 /* Base */,
+				85F14D5A22EA1DD6007705C9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		85F6C0D822E9DAF000177545 /* Main.storyboard */ = {
+		85F14D5B22EA1DD6007705C9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				85F6C0D922E9DAF000177545 /* Base */,
+				85F14D5C22EA1DD6007705C9 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

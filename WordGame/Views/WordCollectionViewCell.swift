@@ -10,6 +10,8 @@ import UIKit
 
 class WordCollectionViewCell: UICollectionViewCell {
     
+    static let identifier = "wordCell"
+    
     @IBOutlet weak var wordLabel: UILabel!
 
     // MARK: - Custom methods
