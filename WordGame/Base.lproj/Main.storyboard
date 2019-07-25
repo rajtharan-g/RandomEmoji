@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WL2-vu-uWg">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Random Emojis-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WordGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="frL-Dc-wRL">
+                                <rect key="frame" x="0.0" y="156" width="320" height="320"/>
+                                <color key="backgroundColor" red="0.31657342049999998" green="0.039405069959999997" blue="0.48221367389999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="frL-Dc-wRL" secondAttribute="height" multiplier="1:1" id="76Z-kd-9PE"/>
+                                </constraints>
+                                <collectionViewLayout key="collectionViewLayout" id="mbE-CY-nh8" customClass="CustomLayout" customModule="WordGame" customModuleProvider="target"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="wordCell" id="47p-ds-8pJ" customClass="WordCollectionViewCell" customModule="WordGame" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAV-9W-etV">
+                                                    <rect key="frame" x="5" y="5" width="40" height="40"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="RAV-9W-etV" firstAttribute="top" secondItem="47p-ds-8pJ" secondAttribute="top" constant="5" id="5MA-Gf-QlI"/>
+                                            <constraint firstAttribute="trailing" secondItem="RAV-9W-etV" secondAttribute="trailing" constant="5" id="VRi-n0-cR7"/>
+                                            <constraint firstAttribute="bottom" secondItem="RAV-9W-etV" secondAttribute="bottom" constant="5" id="WS5-hw-Gnd"/>
+                                            <constraint firstItem="RAV-9W-etV" firstAttribute="leading" secondItem="47p-ds-8pJ" secondAttribute="leading" constant="5" id="hD3-yt-mo5"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="wordLabel" destination="RAV-9W-etV" id="A5G-kR-iQI"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="KP3-kU-oVq"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="OzH-2t-3QN"/>
+                                </connections>
+                            </collectionView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="xPa-4c-iwR">
+                                <rect key="frame" x="141.5" y="297.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="frL-Dc-wRL" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="aQi-sk-U73"/>
+                            <constraint firstItem="frL-Dc-wRL" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="lwM-Ax-qEn"/>
+                            <constraint firstItem="frL-Dc-wRL" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="n3B-ft-19b"/>
+                            <constraint firstItem="xPa-4c-iwR" firstAttribute="centerY" secondItem="frL-Dc-wRL" secondAttribute="centerY" id="phu-fV-AYp"/>
+                            <constraint firstItem="frL-Dc-wRL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rUl-O3-dVs"/>
+                            <constraint firstItem="xPa-4c-iwR" firstAttribute="centerX" secondItem="frL-Dc-wRL" secondAttribute="centerX" id="xmd-ZR-ZPT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="aQi-sk-U73"/>
+                                <exclude reference="n3B-ft-19b"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="aQi-sk-U73"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="aQi-sk-U73"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="n3B-ft-19b"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="n3B-ft-19b"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Random Emojis" id="gAy-QS-qF2">
+                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="txE-jX-aFV">
+                            <connections>
+                                <action selector="deleteAllEmojis:" destination="BYZ-38-t0r" id="3AB-Cd-8Zt"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="q9o-vN-qun">
+                            <connections>
+                                <action selector="addRandomEmoji:" destination="BYZ-38-t0r" id="Txg-Vk-BKK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="xPa-4c-iwR" id="ibJ-Oz-KjZ"/>
+                        <outlet property="wordCollectionView" destination="frL-Dc-wRL" id="Q7f-qN-0V6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061.25" y="32.74647887323944"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Bko-HF-48K">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WL2-vu-uWg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="985-Nz-NFA">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ehx-yI-yxO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Svc-uv-aR8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63.75" y="32.74647887323944"/>
+        </scene>
+    </scenes>
+</document>
