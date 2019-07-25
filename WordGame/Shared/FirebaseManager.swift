@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 protocol FirebaseManagerDelegate: class {
-    func reloadCollectionView(words: [String]?)
+    func reloadCollectionView(words: [Word]?)
 }
 
 class FirebaseManager: NSObject {
@@ -31,10 +31,13 @@ class FirebaseManager: NSObject {
     
     func handleResponse(snapshot: DataSnapshot) {
         if let snapshotValue = snapshot.value as? [String: Any] {
-            var arrayOfWords = snapshotValue.values.map({$0}) as! [[String: Any]]
-            arrayOfWords = arrayOfWords.sorted(by: {($0["timestamp"] as! Double) < ($1["timestamp"] as! Double)})
-            let words = arrayOfWords.compactMap({$0["emoji"]}) as! [String]
-            self.delegate?.reloadCollectionView(words: words)
+            let arrayOfWords = snapshotValue.values.map({$0}) as! [[String: Any]]
+            var words: [Word] = []
+            for word in arrayOfWords {
+                let wordObject = Word(emoji: word["emoji"] as? String, timestamp: word["timestamp"] as? Double)
+                words.append(wordObject)
+            }
+            self.delegate?.reloadCollectionView(words: words.sorted(by: {$0.timestamp ?? 0 < $1.timestamp ?? 0}))
         } else {
             self.delegate?.reloadCollectionView(words: nil)
         }

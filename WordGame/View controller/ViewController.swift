@@ -13,7 +13,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var wordCollectionView: UICollectionView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    var words: [String]?
+    var words: [Word]?
+    
+    // MARK: - View life cycle methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +27,8 @@ class ViewController: UIViewController {
         FirebaseManager.shared.listenToFirebaseDB()
         FirebaseManager.shared.delegate = self
     }
+    
+    // MARK: - Overriding default methods
 
     override public var traitCollection: UITraitCollection {
         // Size class is same for iPad in landscape and portrait. So to differentiate we override the case for iPad in landscape
@@ -48,6 +52,8 @@ class ViewController: UIViewController {
     
 }
 
+// MARK: - UICollectionViewDataSource methods
+
 extension ViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -56,20 +62,17 @@ extension ViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "wordCell", for: indexPath) as! WordCollectionViewCell
-        if let word = words?[indexPath.item] {
-            cell.wordLabel.text = word
-        } else {
-            cell.wordLabel.text = GameHelper.randomEmoji()
-        }
-        cell.wordLabel.backgroundColor = UIColor.white
+        cell.updateCell(word: words?[indexPath.row])
         return cell
     }
     
 }
 
+// MARK: - FirebaseManagerDelegate methods
+
 extension ViewController: FirebaseManagerDelegate {
 
-    func reloadCollectionView(words: [String]?) {
+    func reloadCollectionView(words: [Word]?) {
         activityIndicator.stopAnimating()
         self.words = words
         wordCollectionView.reloadData()

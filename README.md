@@ -1,19 +1,27 @@
-# Random Emoji
 
-We have used custom UICollectionViewLayout to populate items (random emojis) starting from the bottom right corner of collection view using Firebase real time database.
+Random Emojiis a demo which uses a custom UICollectionViewLayout to populate items (random emojis) starting from the bottom right corner of collection view using Firebase real time database. :simple_smile: 
 
 
 # Features
 
-1. Post random emoji to Firebase database
-2. Getting the updated list of emojis from Firebase real time database and displayin it in grid UI
-3. Deleting all data from Firebase database
-4. Supports both iPhone and iPad
-5. Suport both Portrait and Landscape orientations
+- Add random emoji to Firebase database using the plus button (+)
+- Displaying the updated list of emojis from Firebase real time database in a grid like UI
+- Deleting enitire data from Firebase database using the delete button (trash icon)
+- Supports both iPhone and iPad devices
+- Supports both Portrait and Landscape orientations
 
 
-# Future enhancements
+# Further enhancements
 
-1. Adding pagination for fetching the data
+- Adding pagination for fetching the data
+
+
+# Requirements 
+- iOS 10.0+
+- Xcode 10.2+
+- Swift 5+
+
+# Note
+A sample JSON of the database structure has also been added. To run the app, download the project and run pod install. Open xcworkspace and you can run the app in simulator.
 
 

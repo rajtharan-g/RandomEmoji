@@ -12,5 +12,14 @@ class WordCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var wordLabel: UILabel!
 
+    // MARK: - Custom methods
+    
+    func updateCell(word: Word?) {
+        if let emoji = word?.emoji {
+            wordLabel.text = emoji
+        } else {
+            wordLabel.text = GameHelper.randomEmoji()
+        }
+    }
     
 }
